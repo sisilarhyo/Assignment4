@@ -1,0 +1,185 @@
+!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Student Name</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+
+
+					<!-- Start your code here -->
+					<!-- Tables Section -->
+<!-- Tables Section -->
+<section>
+    <h2>Tables</h2>
+    <table class="table">
+        <caption>Staff Information</caption>
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Peter Bull</td>
+                <td>Email: peter.bull@google.com</td>
+                <td>Phone: 647-365-8821</td>
+            </tr>
+            <tr>
+                <td>Mabel Jae</td>
+                <td>Email: mabel.jae@google.com</td>
+                <td>Phone: 437-123-1076</td>
+            </tr>
+            <tr>
+                <td>James Potter</td>
+                <td>Email: james.potter@google.com</td>
+                <td>Phone: 287-512-6881</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Staff: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table class="table">
+        <caption>Product Inventory</caption>
+        <thead>
+            <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">In Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Phone Charger</td>
+                <td>$150.00</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Mobile Phone</td>
+                <td>$2100.00</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Home Theatre</td>
+                <td>$3200.00</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Products</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <p>The first table provides a list of staff members along with their contact information and the second table lists products in inventory with pricing and stock status.</p>
+</section>
+
+
+
+<!-- Lists Section -->
+<!-- Lists Section -->
+<section>
+    <h2>Task List</h2>
+    <ol>
+        <li>Become a Make-up Artist
+            <ul>
+                <li>Enhancing facial aesthetics</li>
+                <li>Consulting with clients and creating custom looks based on their specifications</li>
+                <li>Taking lighting and setting into account when applying make-up</li>
+            </ul>
+        </li>
+        <li>Become a caterer
+            <ul>
+                <li>Secure needed licenses</li>
+                <li>Market and attract clients</li>
+                <li>Manage your finances</li>
+            </ul>
+        </li>
+        <li>Attend to pending requests</li>
+        <li>Complete my assignments</li>
+        <li>Attend to the family</li>
+    </ol>
+    <p>This ordered list outlines the key tasks I plan to complete in my journey to becoming a full-stack web developer. The nested lists under some tasks highlight specific areas to focus on within broader categories.</p>
+</section>
+
+
+<!-- Images Section -->
+<section>
+    <h2>Images</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder performing a trick" />
+    <!-- Add more images with alt text here -->
+    <p>This image section contains photographs showcasing various subjects and scenes.</p>
+</section>
+
+<!-- Audio Section -->
+<section>
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
+    <p>This section includes an HTML5 audio player that allows you to listen to sample audio tracks.</p>
+</section>
+
+<!-- Video Section -->
+<section>
+    <h2>Video</h2>
+    <video controls>
+        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+        <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <p>This section includes an HTML5 video player featuring a sample video clip.</p>
+</section>
+
+					
+					
+					<!-- End your code here  -->
+
+
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -90,5 +90,25 @@ function getStudentByNum(num) {
         }
     });
 }
-
-module.exports = { initialize, getAllStudents, getTAs, getCourses, getStudentsByCourse, getStudentByNum };
+function addStudent(studentData) {
+  return new Promise(async (resolve, reject) => {
+      try {
+          // If TA is undefined, set it to false, otherwise true
+          studentData.TA = !!studentData.TA;
+ 
+          // Set the studentNum property
+          studentData.studentNum = dataCollection.students.length + 1;
+ 
+          // Push the updated studentData object onto the students array
+          dataCollection.students.push(studentData);
+ 
+          // Save the updated students array back to the file
+          await fs.writeFile('./data/students.json', JSON.stringify(dataCollection.students, null, 4), 'utf8');
+ 
+          resolve();
+      } catch (error) {
+          reject("Failed to add student");
+      }
+  });
+}
+module.exports = { initialize, getAllStudents, getTAs, getCourses, getStudentsByCourse, getStudentByNum, addStudent };
